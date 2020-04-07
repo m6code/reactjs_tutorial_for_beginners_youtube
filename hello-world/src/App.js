@@ -1,26 +1,28 @@
-import React from 'react';
+//import React from 'react';
+import React, { Component } from 'react';
+// eslint-disable-next-line
 import logo from './logo.svg';
 import './App.css';
+import Greet from './components/Greet';
+import { Welcome } from './components/Greet';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello World My first reactJS App
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// function App() {
+//   return (
+//     <div className="App">
+//       <Greet/>
+//     </div>
+//   );
+// }
+
+class App extends Component{
+  render(){
+    return (
+        <div className="App">
+        <Greet/>
+        <Welcome/>
+        </div>
+      );
+  }
 }
 
 export default App;
