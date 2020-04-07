@@ -43,3 +43,20 @@
 
 ## Functional Components
 This is a javascript funtions that accepts objects of properties known as props. It accepts an input of properties and return the UI.
+
+- Funtional components should be used as much as possible over the class based component
+	- Reasons
+		- Absence of this
+		- Solution without using state
+		- Mainly responsible for the UI
+
+## Class Components
+- They are basically ES6 Classes, they can optionally recieve props as import and return html.
+- They can also maintain a private internal state (maintain info and use it to decribe UI).
+
+
+- Class Component are:
+	- Feature rich
+	- Maintain their own private data
+	- Complex UI Logic
+	- Provide life cycle hooks

@@ -4,7 +4,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Greet from './components/Greet';
-import { Welcome } from './components/Greet';
+import { WelcomeNamed } from './components/Greet';
+import Welcome  from './components/Welcome';
 
 // function App() {
 //   return (
@@ -20,6 +21,7 @@ class App extends Component{
         <div className="App">
         <Greet/>
         <Welcome/>
+        <WelcomeNamed/>
         </div>
       );
   }

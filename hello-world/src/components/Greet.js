@@ -7,7 +7,7 @@ import React from 'react'
 const Greet = () => <h1>Hello Benjamin </h1>
 
 // Named Export
-export const Welcome = () => <p> Welcome to my first react app I'm try named export here </p>
+export const WelcomeNamed = () => <p> Welcome to my first react app I'm try named export here </p>
 
 // Default Export
 export default Greet
