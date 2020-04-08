@@ -63,4 +63,10 @@ This is a javascript funtions that accepts objects of properties known as props.
 
 ## Hooks
 Hooks let you use state and other React features without writing a class.
-- 
+
+
+## JSX
+JavaScript XML (JSL) - is an extension of the JavaScript language syntax. It allows you write XML-like code for element and components.
+	- it has a tag name, attribute and children
+	- makes react code simpler and elegant
+	- translates to pure JavaScript

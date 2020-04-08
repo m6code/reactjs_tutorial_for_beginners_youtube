@@ -6,6 +6,7 @@ import './App.css';
 import Greet from './components/Greet';
 import { WelcomeNamed } from './components/Greet';
 import Welcome  from './components/Welcome';
+import Hello from './components/Hello';
 
 // function App() {
 //   return (
@@ -22,6 +23,7 @@ class App extends Component{
         <Greet/>
         <Welcome/>
         <WelcomeNamed/>
+        <Hello/>
         </div>
       );
   }
