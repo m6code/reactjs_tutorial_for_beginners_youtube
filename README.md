@@ -60,3 +60,7 @@ This is a javascript funtions that accepts objects of properties known as props.
 	- Maintain their own private data
 	- Complex UI Logic
 	- Provide life cycle hooks
+
+## Hooks
+Hooks let you use state and other React features without writing a class.
+- 
