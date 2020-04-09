@@ -27,9 +27,12 @@ class App extends Component{
   render(){
     return (
       <div className="App">
-      <Counter/>
-      {/*<Message/>
-      </Greet name="Benjamin Sharia" heroName="M6tem"> 
+
+      {/*<Counter/>
+      <Message/>
+      <Hello/>
+      */}
+      <Greet name="Benjamin Sharia" heroName="M6tem"> 
         <p> This is a child props </p>
       </Greet>
       <Greet name="John" heroName="Dalai">
@@ -42,8 +45,8 @@ class App extends Component{
       <Welcome name="Doe" heroName="Shazam"/>
 
       <WelcomeNamed/>
-      <Hello/>
-    */}
+      
+    
     </div>
     );
   }
