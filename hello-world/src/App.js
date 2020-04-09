@@ -13,7 +13,12 @@ import Welcome  from './components/Welcome';
 import Hello from './components/Hello';
 // eslint-disable-next-line
 import Message from './components/Message';
+// eslint-disable-next-line
 import Counter from "./components/Counter";
+// eslint-disable-next-line
+import FunctionClick from "./components/FunctionClick";
+// eslint-disable-next-line
+import ClassClick from "./components/ClassClick";
 
 // function App() {
 //   return (
@@ -22,16 +27,18 @@ import Counter from "./components/Counter";
 //     </div>
 //   );
 // }
-
+ 
 class App extends Component{
   render(){
     return (
       <div className="App">
 
+      <FunctionClick/>
+      <ClassClick/>
+
       {/*<Counter/>
       <Message/>
-      <Hello/>
-      */}
+      <Hello/
       <Greet name="Benjamin Sharia" heroName="M6tem"> 
         <p> This is a child props </p>
       </Greet>
@@ -45,6 +52,7 @@ class App extends Component{
       <Welcome name="Doe" heroName="Shazam"/>
 
       <WelcomeNamed/>
+      */}
       
     
     </div>
