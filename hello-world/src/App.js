@@ -3,11 +3,17 @@ import React, { Component } from 'react';
 // eslint-disable-next-line
 import logo from './logo.svg';
 import './App.css';
+// eslint-disable-next-line
 import Greet from './components/Greet';
+// eslint-disable-next-line
 import { WelcomeNamed } from './components/Greet';
+// eslint-disable-next-line
 import Welcome  from './components/Welcome';
+// eslint-disable-next-line
 import Hello from './components/Hello';
+// eslint-disable-next-line
 import Message from './components/Message';
+import Counter from "./components/Counter";
 
 // function App() {
 //   return (
@@ -21,8 +27,9 @@ class App extends Component{
   render(){
     return (
       <div className="App">
-      <Message/>
-      {/*</Greet name="Benjamin Sharia" heroName="M6tem"> 
+      <Counter/>
+      {/*<Message/>
+      </Greet name="Benjamin Sharia" heroName="M6tem"> 
         <p> This is a child props </p>
       </Greet>
       <Greet name="John" heroName="Dalai">
