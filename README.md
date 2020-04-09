@@ -70,3 +70,9 @@ JavaScript XML (JSL) - is an extension of the JavaScript language syntax. It all
 	- it has a tag name, attribute and children
 	- makes react code simpler and elegant
 	- translates to pure JavaScript
+
+## Props
+- Props is short for properties
+- It is the optional input your component can accept which allows the component to be dynamic.
+- We specify props as attributes
+- props are immutable

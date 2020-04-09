@@ -19,12 +19,22 @@ import Hello from './components/Hello';
 class App extends Component{
   render(){
     return (
-        <div className="App">
-        <Greet/>
-        <Welcome/>
-        <WelcomeNamed/>
-        <Hello/>
-        </div>
+      <div className="App">
+      <Greet name="Benjamin Sharia" heroName="M6tem"> 
+        <p> This is a child props </p>
+      </Greet>
+      <Greet name="John" heroName="Dalai">
+        <button>Action</button>
+      </Greet>
+      <Greet name="Doe" heroName="Shazam"/>
+      <Greet name="Riley" heroName="Beasty"/>
+      
+      <Welcome name="John" heroName="Dalai"/>
+      <Welcome name="Doe" heroName="Shazam"/>
+
+      <WelcomeNamed/>
+      <Hello/>
+      </div>
       );
   }
 }
