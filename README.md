@@ -76,3 +76,11 @@ JavaScript XML (JSL) - is an extension of the JavaScript language syntax. It all
 - It is the optional input your component can accept which allows the component to be dynamic.
 - We specify props as attributes
 - props are immutable
+- They get passed to the component
+- A parent passes props down to the children
+- this.props is used to access props
+
+## State
+- State is managed within the component
+- State can be changed
+- this.state is used to access state
