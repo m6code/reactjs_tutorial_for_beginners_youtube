@@ -19,6 +19,8 @@ import Counter from "./components/Counter";
 import FunctionClick from "./components/FunctionClick";
 // eslint-disable-next-line
 import ClassClick from "./components/ClassClick";
+// eslint-disable-next-line
+import EventBind from "./components/EventBind";
 
 // function App() {
 //   return (
@@ -33,10 +35,12 @@ class App extends Component{
     return (
       <div className="App">
 
-      <FunctionClick/>
+      <EventBind/>
+
+     {/* <FunctionClick/>
       <ClassClick/>
 
-      {/*<Counter/>
+      <Counter/>
       <Message/>
       <Hello/
       <Greet name="Benjamin Sharia" heroName="M6tem"> 
