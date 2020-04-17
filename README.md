@@ -90,3 +90,7 @@ Use setState to modify a component state.
 - Always make use of setState and never modify the state directly.
 - Code has to executed after the state has been updated? Place that code in the the callback function which is the second argument to the setState method.
 - When you have to update state based on the previous state value, pass in a function as an argument instead of the regular object.
+
+## Binding Event Handlers
+
+## Methods As Props
