@@ -23,6 +23,8 @@ import ClassClick from "./components/ClassClick";
 import EventBind from "./components/EventBind";
 // eslint-disable-next-line
 import ParentComponent from './components/ParentComponent';
+// eslint-disable-next-line
+import UserGreeting from './components/UserGreeting';
 
 // function App() {
 //   return (
@@ -36,10 +38,11 @@ class App extends Component{
   render(){
     return (
       <div className="App">
+      <UserGreeting />
 
-      <ParentComponent/>
+      {/*  <ParentComponent/>
 
-     {/*  <EventBind/>
+     <EventBind/>
 
      <FunctionClick/>
       <ClassClick/>

@@ -94,3 +94,16 @@ Use setState to modify a component state.
 ## Binding Event Handlers
 
 ## Methods As Props
+
+## Conditional Rendering
+- if/else : 
+	- don't work inside the JSX
+	- adding if/else statements within the JSX is not valid
+
+- Element variables
+	- This a better approach which uses Javascript variables to store elements.
+	- Helps render the entire component or just a part of the component.
+- Ternary conditional operator
+	- Even more simpler, can be used inside the JSX
+- Short circuit operator
+	- Uses the && logical operator to evaluate both the right hand and left hand side if either the right or left hand side is false nothing with be returned. 
