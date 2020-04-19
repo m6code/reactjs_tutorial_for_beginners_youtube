@@ -187,3 +187,29 @@ When can use the following options to style react component
 	4. componentDidMount():
 		- is called only once in the entire lifecycle of a component and is invoked immediately after a component and all its children components have been rendered to the DOM.
 		- here is the perfect place to cause side effects e.g interact with DOM, make any ajax calls to load data etc.
+
+## Components Updating LifeCycle Methods
+
+1. static getDerivedStateFromProps(props, state) :
+	- Method is called every time a component is re-rendered
+	- set the state
+	- donot cause side effects here
+	- rarely used method
+2. shouldComponentUpdate(nextProps, nextState) :
+	- Dictates if the component should re-render or not
+	- For Performance optimization
+	- Cause no side effects here
+	- rarely used method
+3. render() :
+	- Only required method
+	- Read props & state and return JSX
+	- Do not change state or interact with DOM or make ajax calls here.
+4. getSnapshotBeforeUpdate(prevProps, prevState) :
+	- Called right before the changes from the virtual DOM are to be reflected in the DOM
+	- rarely used method
+	- capture some information from the DOM
+	- method will either return null or return a value. Returned value will be passed as a third parameter to the next method.
+6. componentDidUpdate(prevProps, prevState, snapshot) :
+	- Called after the render is finished in the re-render cycles.
+	- Called only once in each re-render cycle
+	- can cause side effects here
