@@ -1,4 +1,5 @@
 import React from 'react'
+// eslint-disable-next-line
 import Person from './Person';
 function NameList() {
 	const names = ['Bruce', 'Clark', 'Diana', 'Bruce'];

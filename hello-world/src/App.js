@@ -27,6 +27,14 @@ import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
 // eslint-disable-next-line
 import NameList from './components/NameList';
+// eslint-disable-next-line
+import Stylesheet from './components/Stylesheet';
+// eslint-disable-next-line
+import Inline from './components/Inline';
+// Regular css stylesheet import
+import './appStyles.css';
+// Module css stylesheet import
+import styles from './appStyles.module.css';
 
 // function App() {
 //   return (
@@ -41,12 +49,16 @@ class App extends Component{
     return (
       <div className="App">
       
-       <NameList/>
+      <Stylesheet primary={true}/>
+      <Inline/>
+      <h1 className='error'>Error</h1>
+      <h1 className={styles.success}>Success</h1>
+      {/* <NameList/>
 
-      {/* <UserGreeting />
-       <ParentComponent/>
-     <EventBind/>
-     <FunctionClick/>
+      <UserGreeting />
+      <ParentComponent/>
+      <EventBind/>
+      <FunctionClick/>
       <ClassClick/>
 
       <Counter/>

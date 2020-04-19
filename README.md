@@ -125,3 +125,9 @@ Use setState to modify a component state.
 	- The list is a static list and will not change.
 	- The list will never be re-ordered or filtered.
 
+## Styling React Components.
+When can use the following options to style react component
+- CSS stylesheets
+- Inline styling : in react inline style are not specified as string instead they are specified as an object whose key is the camel case version of the style name and the value is usually a string.
+- CSS Modules
+- CSS in JS Libraries (Styled Components)
