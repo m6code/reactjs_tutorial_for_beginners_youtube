@@ -110,3 +110,9 @@ Use setState to modify a component state.
 
 ## List Rendering
 - The map method of the array goes through the array and apply the function (tranformation) to each of the element of the array.
+
+## Lists and Keys
+- The key prop is a special attribute you need to include when creating list of elements and it must be unique for each element.
+- Key prop are not accessible in the child component. Do not try to use the key prop to render any data in any of your components.
+- Keys help react identify which items are changed, removed or added and helps react handles UI change efficiently.
+- Keys give the elements a stable identity
