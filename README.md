@@ -106,4 +106,7 @@ Use setState to modify a component state.
 - Ternary conditional operator
 	- Even more simpler, can be used inside the JSX
 - Short circuit operator
-	- Uses the && logical operator to evaluate both the right hand and left hand side if either the right or left hand side is false nothing with be returned. 
+	- Uses the && logical operator to evaluate both the right hand and left hand side if either the right or left hand side is false nothing with be returned.
+
+## List Rendering
+- The map method of the array goes through the array and apply the function (tranformation) to each of the element of the array.

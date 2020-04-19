@@ -25,6 +25,8 @@ import EventBind from "./components/EventBind";
 import ParentComponent from './components/ParentComponent';
 // eslint-disable-next-line
 import UserGreeting from './components/UserGreeting';
+// eslint-disable-next-line
+import NameList from './components/NameList';
 
 // function App() {
 //   return (
@@ -38,12 +40,12 @@ class App extends Component{
   render(){
     return (
       <div className="App">
-      <UserGreeting />
+      
+       <NameList/>
 
-      {/*  <ParentComponent/>
-
+      {/* <UserGreeting />
+       <ParentComponent/>
      <EventBind/>
-
      <FunctionClick/>
       <ClassClick/>
 
