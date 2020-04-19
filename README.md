@@ -129,5 +129,11 @@ Use setState to modify a component state.
 When can use the following options to style react component
 - CSS stylesheets
 - Inline styling : in react inline style are not specified as string instead they are specified as an object whose key is the camel case version of the style name and the value is usually a string.
-- CSS Modules
+- CSS Modules : works from react-script >= 2, the file naming convention to be used for css modules with create-react-app - the filename must be suffixed with .module.css
 - CSS in JS Libraries (Styled Components)
+
+## Basics of Form Handling
+- Controlled Component
+	- To create a controlled component, 
+		1. create a component state that will control the value of the imput element
+		2. then handle the onChange event

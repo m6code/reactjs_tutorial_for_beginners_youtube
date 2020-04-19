@@ -35,6 +35,8 @@ import Inline from './components/Inline';
 import './appStyles.css';
 // Module css stylesheet import
 import styles from './appStyles.module.css';
+// eslint-disable-next-line
+import Form from './components/Form';
 
 // function App() {
 //   return (
@@ -49,11 +51,13 @@ class App extends Component{
     return (
       <div className="App">
       
-      <Stylesheet primary={true}/>
+      <Form/>
+      
+      {/* <Stylesheet primary={true}/>
       <Inline/>
       <h1 className='error'>Error</h1>
       <h1 className={styles.success}>Success</h1>
-      {/* <NameList/>
+      <NameList/>
 
       <UserGreeting />
       <ParentComponent/>
