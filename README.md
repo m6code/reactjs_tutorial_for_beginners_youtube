@@ -116,3 +116,12 @@ Use setState to modify a component state.
 - Key prop are not accessible in the child component. Do not try to use the key prop to render any data in any of your components.
 - Keys help react identify which items are changed, removed or added and helps react handles UI change efficiently.
 - Keys give the elements a stable identity
+
+## Index as Key Anti-pattern
+- Sometimes we can use the index of an array as a key.
+- Using the index as a key can cause serious issues in some scenarios
+- When to use index as keys
+	- The item on your list do not have a unique id.
+	- The list is a static list and will not change.
+	- The list will never be re-ordered or filtered.
+
