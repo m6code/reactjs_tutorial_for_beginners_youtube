@@ -149,17 +149,41 @@ When can use the following options to style react component
 
 	2. Updating : called when a component is being re-rendered as a result of changes to either its props or state. During the updating state we have 5 methods
 
-		- static getDerivedStateFromProps
-		- shouldComponentUpdate
-		- render
-		- getSnapshotBeforeUpdate and
-		- componentDidUpdate
+			- static getDerivedStateFromProps
+			- shouldComponentUpdate
+			- render
+			- getSnapshotBeforeUpdate and
+			- componentDidUpdate
 
 	3. Unmounting : called when a component is being removed from the DOM. Unmount has just 1 method
 
-		- componentWillUnmount 
+			- componentWillUnmount 
 
 	4. Error Handling : called when there is an during rendering, in a lifecycle method or in the constructor of any child component. This has 2 methods
 
-		- static getDerivedStateFromError and
-		- componentDidCatch
+			- static getDerivedStateFromError and
+			- componentDidCatch
+
+	## Component Mounting Life Cycle Methods
+
+	1. constructor(props) : 
+		- is a special function that is called whenever a new component is created. 
+		- It is used for initializing state or binding the event handlers. 
+		- Never make HTTP requests from withing a constructor.
+		- It is the only place you are expected to set or change the state by directly overwriting `this.state` fields in other scenarios you are expected to use `this.setState()`.
+
+	2. static getDerivedStateFromProps(props, state) :
+		- rarely used, when the state of the component depends on changes in props over time.
+		- since static, it does not have access to the this keyword. thus `this.setState()` cannot be called here instead you return an object that represents the new state of the component.
+		- do not cause side effects like HTTP requests
+
+	3. render() :
+		- this is the only require method in a class component
+		- we simply read this.props and this.state and return the JSX which describe the UI
+		- it is a pure function for the given props and state it should always render the same UI.
+		- Do not change the state of the component, interact with the DOM or make ajax calls here.
+		- Children component lifecycle methods are also executed here.
+
+	4. componentDidMount():
+		- is called only once in the entire lifecycle of a component and is invoked immediately after a component and all its children components have been rendered to the DOM.
+		- here is the perfect place to cause side effects e.g interact with DOM, make any ajax calls to load data etc.
