@@ -34,6 +34,7 @@ import Inline from './components/Inline';
 // Regular css stylesheet import
 import './appStyles.css';
 // Module css stylesheet import
+// eslint-disable-next-line
 import styles from './appStyles.module.css';
 // eslint-disable-next-line
 import Form from './components/Form';

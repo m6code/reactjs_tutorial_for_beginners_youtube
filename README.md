@@ -137,3 +137,29 @@ When can use the following options to style react component
 	- To create a controlled component, 
 		1. create a component state that will control the value of the imput element
 		2. then handle the onChange event
+
+## Components Lifecycle Methods
+- Life cycle methods available for a class component can be classified into four phases
+	1. Mounting : they are called when an instance of a component is being created and inserted into the DOM. The mounting phase has four methods
+
+			- constructor
+			- static getDerivedStateFromProps
+			- render and
+			- componentDidMount
+
+	2. Updating : called when a component is being re-rendered as a result of changes to either its props or state. During the updating state we have 5 methods
+
+		- static getDerivedStateFromProps
+		- shouldComponentUpdate
+		- render
+		- getSnapshotBeforeUpdate and
+		- componentDidUpdate
+
+	3. Unmounting : called when a component is being removed from the DOM. Unmount has just 1 method
+
+		- componentWillUnmount 
+
+	4. Error Handling : called when there is an during rendering, in a lifecycle method or in the constructor of any child component. This has 2 methods
+
+		- static getDerivedStateFromError and
+		- componentDidCatch
