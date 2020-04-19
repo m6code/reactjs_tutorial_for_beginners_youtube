@@ -213,3 +213,7 @@ When can use the following options to style react component
 	- Called after the render is finished in the re-render cycles.
 	- Called only once in each re-render cycle
 	- can cause side effects here
+
+
+## Fragments
+- Lets you group a list of children without adding extra nodes to the DOM

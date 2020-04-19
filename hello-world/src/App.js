@@ -38,8 +38,12 @@ import './appStyles.css';
 import styles from './appStyles.module.css';
 // eslint-disable-next-line
 import Form from './components/Form';
-// eslint-disable-nextline
+// eslint-disable-next-line
 import LifeCycleA from './components/LifeCycleA'
+// eslint-disable-nextline
+import FragmentDemo from './components/FragmentDemo'
+// eslint-disable-nextline
+import Table from './components/Table'
 
 // function App() {
 //   return (
@@ -54,9 +58,10 @@ class App extends Component{
     return (
       <div className="App">
 
-
-      <LifeCycleA />
-      {/* <Form/>
+      <FragmentDemo />
+      <Table/>
+      {/* <LifeCycleA />
+      <Form/>
       <Stylesheet primary={true}/>
       <Inline/>
       <h1 className='error'>Error</h1>

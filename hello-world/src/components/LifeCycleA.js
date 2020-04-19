@@ -1,4 +1,5 @@
 import React from 'react'
+// eslint-disable-nextline
 import LifeCycleB from './LifeCycleB'
 
 class LifeCycleA extends React.Component {
