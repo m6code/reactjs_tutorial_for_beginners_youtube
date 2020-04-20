@@ -234,3 +234,6 @@ When can use the following options to style react component
 
 ## Fowarding Refs
 - is a technique for automatically passing a ref through a component to one of its children
+
+## Portals
+- Portals provide the ability to break out of a DOM tree.

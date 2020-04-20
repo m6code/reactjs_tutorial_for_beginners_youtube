@@ -52,6 +52,8 @@ import RefsDemo from './components/RefsDemo';
 import FocusInput from './components/FocusInput'
 // eslint-disable-next-line
 import FRParentInput from './components/FRParentInput';
+// eslint-disable-next-line
+import PortalDemo from './components/PortalDemo';
 
 // function App() {
 //   return (
@@ -66,9 +68,9 @@ class App extends Component{
     return (
       <div className="App">
 
-
-      <FRParentInput/>
-      {/*<FocusInput/>
+      <PortalDemo/>
+      {/*<FRParentInput/>
+      <FocusInput/>
       <RefsDemo />
       <ParentComp/>
       <FragmentDemo />
