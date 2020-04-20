@@ -229,3 +229,5 @@ When can use the following options to style react component
 
 ## Refs
 - Refs makes it possible to access DOM nodes directly within react. 
+
+## Refs With Class Components

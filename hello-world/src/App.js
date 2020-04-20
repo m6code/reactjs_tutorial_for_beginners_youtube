@@ -48,6 +48,8 @@ import Table from './components/Table';
 import ParentComp from './components/ParentComp';
 // eslint-disable-next-line
 import RefsDemo from './components/RefsDemo';
+// eslint-disable-next-line
+import FocusInput from './components/FocusInput'
 
 // function App() {
 //   return (
@@ -62,9 +64,9 @@ class App extends Component{
     return (
       <div className="App">
 
-
-      <RefsDemo />
-      {/* <ParentComp/>
+      <FocusInput/>
+      {/*<RefsDemo />
+       <ParentComp/>
       <FragmentDemo />
       <Table/>
       <LifeCycleA />
