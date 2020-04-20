@@ -3,6 +3,8 @@ import React from 'react'
 import RegComp from './RegComp';
 // eslint-disable-next-line
 import PureComp from './PureComp';
+// eslint-diasble-next-line
+import MemoComp from './MemoComp';
 
 class ParentComp extends React.Component {
 	constructor(props) {
@@ -25,8 +27,9 @@ class ParentComp extends React.Component {
 		return (
 			<div>
 				Parent Component
-				<RegComp name={this.state.name}/>
-				<PureComp name={this.state.name}/>
+				<MemoComp name={this.state.name} />
+				{/* <RegComp name={this.state.name}/>
+				<PureComp name={this.state.name}/> */}
 			</div>
 		)
 	}
