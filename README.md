@@ -231,3 +231,6 @@ When can use the following options to style react component
 - Refs makes it possible to access DOM nodes directly within react. 
 
 ## Refs With Class Components
+
+## Fowarding Refs
+- is a technique for automatically passing a ref through a component to one of its children
