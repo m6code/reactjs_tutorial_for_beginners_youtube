@@ -46,6 +46,8 @@ import FragmentDemo from './components/FragmentDemo';
 import Table from './components/Table';
 // eslint-disable-next-line
 import ParentComp from './components/ParentComp';
+// eslint-disable-next-line
+import RefsDemo from './components/RefsDemo';
 
 // function App() {
 //   return (
@@ -60,8 +62,10 @@ class App extends Component{
     return (
       <div className="App">
 
-      <ParentComp/>
-      {/* <FragmentDemo />
+
+      <RefsDemo />
+      {/* <ParentComp/>
+      <FragmentDemo />
       <Table/>
       <LifeCycleA />
       <Form/>
