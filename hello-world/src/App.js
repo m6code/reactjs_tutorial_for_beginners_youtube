@@ -39,11 +39,13 @@ import styles from './appStyles.module.css';
 // eslint-disable-next-line
 import Form from './components/Form';
 // eslint-disable-next-line
-import LifeCycleA from './components/LifeCycleA'
-// eslint-disable-nextline
-import FragmentDemo from './components/FragmentDemo'
-// eslint-disable-nextline
-import Table from './components/Table'
+import LifeCycleA from './components/LifeCycleA';
+// eslint-disable-next-line
+import FragmentDemo from './components/FragmentDemo';
+// eslint-disable-next-line
+import Table from './components/Table';
+// eslint-disable-next-line
+import ParentComp from './components/ParentComp';
 
 // function App() {
 //   return (
@@ -58,9 +60,10 @@ class App extends Component{
     return (
       <div className="App">
 
-      <FragmentDemo />
+      <ParentComp/>
+      {/* <FragmentDemo />
       <Table/>
-      {/* <LifeCycleA />
+      <LifeCycleA />
       <Form/>
       <Stylesheet primary={true}/>
       <Inline/>

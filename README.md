@@ -217,3 +217,9 @@ When can use the following options to style react component
 
 ## Fragments
 - Lets you group a list of children without adding extra nodes to the DOM
+
+## Pure Components
+- Pure component implements shouldComponentUpdate with a shallow props and state comparism
+- A regular component does not implement the shouldComponentUpdate method. It always returns true by default
+- A pure component implements shouldComponentUpdate with a shallow prop and state comparism.
+- Prevents unnecessary render and gives a perfromance boost.
