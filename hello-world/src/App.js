@@ -58,6 +58,10 @@ import PortalDemo from './components/PortalDemo';
 import Hero from './components/Hero';
 // eslint-disable-next-line
 import ErrorBoundary from './components/ErrorBoundary';
+// eslint-disable-next-line
+import ClickCounter from './components/ClickCounter';
+// eslint-disable-next-line
+import HoverCounter from './components/HoverCounter';
 
 
 // function App() {
@@ -73,12 +77,16 @@ class App extends Component{
     return (
       <div className="App">
 
-      <ErrorBoundary> <Hero heroName="Batman" /> </ErrorBoundary>
+      
+      <ClickCounter name="Benji" />
+      <HoverCounter />
+
+       {/*<ErrorBoundary> <Hero heroName="Batman" /> </ErrorBoundary>
       <ErrorBoundary> <Hero heroName="John Wick" /> </ErrorBoundary>
       <ErrorBoundary> <Hero heroName="Joker" /> </ErrorBoundary>
       
 
-      {/*<PortalDemo/>
+      <PortalDemo/>
       <FRParentInput/>
       <FocusInput/>
       <RefsDemo />
