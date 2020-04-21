@@ -66,8 +66,13 @@ import HoverCounterTwo from './components/HoverCounterTwo';
 import User from './components/User';
 // eslint-disable-next-line
 import CounterRP from './components/CounterRP';
-
-
+// eslint-disable-next-line
+import ComponentC from './components/ComponentC'
+// eslint-disable-next-line
+import {UserProvider } from './components/userContext'
+// eslint-disable-next-line
+// eslint-disable-next-line
+// eslint-disable-next-line
 // function App() {
 //   return (
 //     <div className="App">
@@ -80,8 +85,10 @@ class App extends Component{
   render(){
     return (
       <div className="App">
-
-      <CounterRP 
+      <UserProvider value="Benjamin">
+        <ComponentC />
+      </UserProvider>
+      {/*<CounterRP 
       render={(count, incrementCount) => ( 
         <ClickCounterTwo count={count} incrementCount={incrementCount} />
         )}
@@ -91,12 +98,12 @@ class App extends Component{
         <HoverCounterTwo count={count} incrementCount={incrementCount} />
         )}
       />
-     {/* <ClickCounterTwo />
+      <ClickCounterTwo />
       <HoverCounterTwo />
       <User render={ (isLoggedIn) => isLoggedIn ? "Benjamin" : "Guest"} />
-      */}
+      
 
-       {/*<ErrorBoundary> <Hero heroName="Batman" /> </ErrorBoundary>
+       <ErrorBoundary> <Hero heroName="Batman" /> </ErrorBoundary>
       <ErrorBoundary> <Hero heroName="John Wick" /> </ErrorBoundary>
       <ErrorBoundary> <Hero heroName="Joker" /> </ErrorBoundary>
       
