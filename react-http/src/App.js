@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import PostList from './components/PostList'
+import PostForm from './components/PostForm'
 
 // function App() {
 //   return (
@@ -28,7 +28,7 @@ class App extends React.Component {
   render() {
     return (
       <div className='App'>
-         <PostList />
+         <PostForm />
       </div>
     )
   }
