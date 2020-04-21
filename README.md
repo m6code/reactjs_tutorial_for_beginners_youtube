@@ -262,3 +262,11 @@ When can use the following options to style react component
 	2. Provide a context value
 	3. Consume the context value.
 
+## React and HTTP
+- React itself do not have a way to fetch or send data to the server, it doesn't even have to know if there is a server in the app.
+- Thus we use and HTTP Library such as
+	- axios
+	- fetch API
+	
+
+
