@@ -250,3 +250,6 @@ When can use the following options to style react component
 - e.g `const newComponent = higherOrderComponent(orignalComponent)`
 
 - It helps us avoid duplication of code.
+
+## Render Props
+- The term "Render Props" refers to a technique for sharing code between react components using a prop whose value is a function.
