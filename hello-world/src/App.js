@@ -54,6 +54,11 @@ import FocusInput from './components/FocusInput'
 import FRParentInput from './components/FRParentInput';
 // eslint-disable-next-line
 import PortalDemo from './components/PortalDemo';
+// eslint-disable-next-line
+import Hero from './components/Hero';
+// eslint-disable-next-line
+import ErrorBoundary from './components/ErrorBoundary';
+
 
 // function App() {
 //   return (
@@ -68,8 +73,13 @@ class App extends Component{
     return (
       <div className="App">
 
-      <PortalDemo/>
-      {/*<FRParentInput/>
+      <ErrorBoundary> <Hero heroName="Batman" /> </ErrorBoundary>
+      <ErrorBoundary> <Hero heroName="John Wick" /> </ErrorBoundary>
+      <ErrorBoundary> <Hero heroName="Joker" /> </ErrorBoundary>
+      
+
+      {/*<PortalDemo/>
+      <FRParentInput/>
       <FocusInput/>
       <RefsDemo />
       <ParentComp/>

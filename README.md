@@ -237,3 +237,9 @@ When can use the following options to style react component
 
 ## Portals
 - Portals provide the ability to break out of a DOM tree.
+
+## Error Boundary
+- The class component that implements either one or both of the lifecycle methods getDerivedStateFromError or componentDidCatch becomes an Error Boundary.
+- The static method getDerivedStateFromError method is used to render a fallback UI after an error is thrown and 
+- the componentDidCatch method is used to log the error information.
+- The placement of the error boundary also matters as it controls if the entire app should have the fall-back UI or just the component causing the problem.
